@@ -46,12 +46,11 @@ namespace PatientAdmissionApp
                 MainContent.Content = dashboardControl;
             }
         }
-        public void UnsubscribeFromPatientUpdatedEvent()
+        ~MainWindow()
         {
             _viewModel.PatientUpdated -= registrationControl.DisplayPatientName;
             _viewModel.PatientUpdated -= appointmentControl.DisplayPatientName;
             _viewModel.PatientUpdated -= dashboardControl.DisplayPatientName;
-
         }
     }
 }

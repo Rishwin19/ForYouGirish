@@ -55,12 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="RelayCommand.cs" />
-    <Page Include="AppointmentControl.xaml">
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Page Include="UserControls\AppointmentControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -68,33 +68,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AppointmentControl.xaml.cs">
+    <Compile Include="UserControls\AppointmentControl.xaml.cs">
       <DependentUpon>AppointmentControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BaseViewModel.cs" />
-    <Compile Include="Ipatient.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="Interfaces\Ipatient.cs" />
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PatientDashboardControl.xaml">
+    <Page Include="UserControls\PatientDashboardControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PatientRegistrationControl.xaml">
+    <Page Include="UserControls\PatientRegistrationControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PatientDashboardControl.xaml.cs">
+    <Compile Include="UserControls\PatientDashboardControl.xaml.cs">
       <DependentUpon>PatientDashboardControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PatientModel.cs" />
-    <Compile Include="PatientRegistrationControl.xaml.cs">
+    <Compile Include="Models\PatientModel.cs" />
+    <Compile Include="UserControls\PatientRegistrationControl.xaml.cs">
       <DependentUpon>PatientRegistrationControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PatientViewModel.cs" />
+    <Compile Include="ViewModels\PatientViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -120,5 +120,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
