@@ -23,6 +23,7 @@ namespace PatientAdmissionApp
         public PatientRegistrationControl()
         {
             InitializeComponent();
+            
         }
         public void DisplayPatientName(object sender, PatientModel e)
         {
